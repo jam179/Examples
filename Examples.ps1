@@ -6,6 +6,7 @@ $URI = (($Endpoint.access.serviceCatalog | Where-Object name -eq "cloudServersOp
 $execute = Invoke-RestMethod -URI $URI -Method Get -Headers $AuthToken
 $execute | Format-Wide  #this just shows the results
 
+#-------------------------------------------------------------------------------------------------------#
 
 # Example with Body
 
